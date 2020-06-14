@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16097" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ios_for_hse" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkY-oU-W1k">
+                                <rect key="frame" x="78" y="403" width="258" height="97"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="il6-nz-Evb"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="fill" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="2ox-z3-IXN">
+                                <rect key="frame" x="78" y="310" width="258" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                                <connections>
+                                    <action selector="CountValue:" destination="BYZ-38-t0r" eventType="editingDidEnd" id="GRd-iS-qtS"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Введите значение в рублях для конвертации в доллар" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wte-sy-cMY">
+                                <rect key="frame" x="78" y="213" width="258" height="64.666666666666686"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="64.666666666666657" id="og3-ZE-xdw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="xkY-oU-W1k" firstAttribute="top" secondItem="2ox-z3-IXN" secondAttribute="bottom" constant="59" id="7Ze-AX-aA6"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="xkY-oU-W1k" secondAttribute="bottom" constant="403" id="EGD-2Y-7gH"/>
+                            <constraint firstItem="xkY-oU-W1k" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="FwL-Mx-Rt0"/>
+                            <constraint firstItem="xkY-oU-W1k" firstAttribute="leading" secondItem="2ox-z3-IXN" secondAttribute="leading" id="MLk-SS-cYM"/>
+                            <constraint firstItem="xkY-oU-W1k" firstAttribute="trailing" secondItem="wte-sy-cMY" secondAttribute="trailing" id="S9q-z7-1wr"/>
+                            <constraint firstItem="wte-sy-cMY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="169" id="eLh-wu-MDE"/>
+                            <constraint firstItem="xkY-oU-W1k" firstAttribute="trailing" secondItem="2ox-z3-IXN" secondAttribute="trailing" id="ge3-Vu-cC2"/>
+                            <constraint firstItem="xkY-oU-W1k" firstAttribute="leading" secondItem="wte-sy-cMY" secondAttribute="leading" id="iCi-s3-Tcw"/>
+                            <constraint firstItem="xkY-oU-W1k" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="78" id="pEq-yT-hRC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="TypeValue" destination="2ox-z3-IXN" id="VOd-GI-wBC"/>
+                        <outlet property="resultLabel" destination="xkY-oU-W1k" id="ikM-RV-P1v"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-107.24637681159422" y="119.86607142857142"/>
+        </scene>
+    </scenes>
+</document>
